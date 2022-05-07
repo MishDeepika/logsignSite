@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>
+            Login and Registration Form
+        </title>
+        <style>
+            body{
+                background-color: rgb(227, 250, 242);
+                height: 100vh;
+                background-size: cover;
+                
+            }
+            .head1{
+                text-align: center;
+                font-size: 40px;
+                color: rgb(89, 89, 212);
+                
+            }
+            .login-page{
+                width: 360px;
+                padding: 10%;
+                margin: auto;
+            }
+            .form{
+                
+                position: relative;
+                z-index:1;
+                background: #ffffff;
+                max-width: 360px;
+                margin: 0 auto 100px;
+                padding: 45px;
+                text-align: center;
+                border: 2px solid rgb(97, 97, 182);
+                background-color: rgb(171, 171, 241);
+            }
+            .form input{
+                font-family: "Roboto", sans-serif;
+                outline: 1;
+                background: #f2f2f2;
+                width: 100%;
+                border: 0;
+                margin: 0 0 15px;
+                padding: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+                border: 2px solid rgb(105, 163, 143);
+                border-radius: 8px;
+                background-color: white;
+            }
+            
+            .form button{
+                background-color: darkblue;
+                border: 2px solid rgb(96, 96, 192);
+                border-radius: 8px;
+                width: 150px;
+                height: 50px;
+                font-size: 18px;
+                cursor: pointer;
+                color: white;
+                margin-top: 20px;
+                
+            }
+            .msg{
+                font-size: 25px;
+            
+            }
+            .msg a{
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="login-page">
+            <h1 class="head1">Registration Form</h1>
+            <div class="form">
+                <form class="registration=form">
+                    <input type="text" placeholder="Enter Nmae">
+                    <input type="text" placeholder="Enter Phone">
+                    <input type="text" placeholder="Enter Email">
+                    <input type="text" placeholder="Set password">
+                    <input type="text" placeholder="Confirm password">
+                    <button>Create Account</button>
+                    <p class="msg"><b>Already Registered? </b><a href="log.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+        <script>
+            $('.message a').click(function(){
+                $('form').animate({height:"toggle", opacity:"toggle"},"slow");
+            })
+            
+    
+            
+        </script>
+    </body>
+</html>
